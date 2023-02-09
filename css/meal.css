@@ -1,0 +1,148 @@
+.container1 {
+  max-width: 100%;
+  margin: 0;
+  display: flex;
+}
+
+/* Meal Image Section*/
+.left-column {
+  width: 30%;
+  position: relative;
+  height: auto;
+}
+#photo {
+  width: 100%;
+  margin-top: 45px;
+  height: auto;
+}
+.left-column photo {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.left-column img.active {
+  opacity: 1;
+}
+h1 {
+  padding: 0%;
+}
+
+/* Full MEal Details section */
+.right-column {
+  width: 70%;
+  margin-top: 30px;
+  margin-left: 15px;
+}
+
+/* Recipe Procedure Section */
+.right-left-column {
+  width: 65%;
+  margin-top: 10px;
+}
+.meal-procedure {
+  border-bottom: 1px solid #e1e8ee;
+  margin-bottom: 20px;
+  display: flex;
+}
+.Meal-details span {
+  font-size: 16px;
+  color: #358ed7;
+  letter-spacing: 1px;
+  margin-left: 0;
+}
+.Meal-details h1 {
+  font-weight: 300;
+  font-size: 52px;
+  color: #43484d;
+  letter-spacing: -2px;
+  margin-bottom: 0;
+}
+.meal-summary {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e1e8ee;
+}
+/* MEal ingredients ANd Measures SEction */
+.right-right-column {
+  width: 35%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 15px;
+  border-left: 1px solid #e1e8ee;
+}
+.right-right-column span {
+  padding-left:0;
+}
+
+.Meal-details p,
+ol {
+  font-size: 16px;
+  font-weight: 300;
+  color: #86939e;
+  line-height: 24px;
+  padding-right: 10px;
+}
+ol{
+  padding-left: 15px;
+}
+
+/* LInk Button Section */
+
+.link-buttons {
+  margin-bottom: 20px;
+}
+
+.link-buttons a {
+  border: 2px solid #e1e8ee;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 13px 20px;
+  font-size: 14px;
+  color: #5e6977;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.link-buttons a:hover,
+.link-buttons a:active,
+.link-buttons a:focus {
+  border: 2px solid white;
+  background-color: #358ed7;
+  color: whitesmoke;
+  outline: none;
+}
+
+/* * Media Querries */
+@media (max-width: 940px) {
+  .container1 {
+    flex-direction: column;
+    margin-top: 5px;
+  }
+
+  .left-column,
+  .right-column {
+    width: 100%;
+  }
+
+  .left-column img {
+    width: 300px;
+    right: 0;
+    top: -65px;
+    left: initial;
+  }
+  /* .right-left-column{
+    margin-left: 30px;
+  } */
+}
+@media (max-width: 535px) {
+  .left-column img {
+    width: 220px;
+    top: -85px;
+    border: 2px solid #358ed7;
+  }
+  
+
+}

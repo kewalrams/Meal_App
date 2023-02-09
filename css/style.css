@@ -1,0 +1,322 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  width: 100%;
+  height: 100%;
+  font-weight: 300px;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.container {
+  min-height: 100vh;
+  max-width: 100%;
+  padding: 0;
+}
+.meal-wrapper {
+  max-width: 100%;
+  background: #fff;
+  text-align: center;
+}
+
+/* Header SEction*/
+.header {
+  overflow: hidden;
+  background-color: #358ed7;
+  padding: 20px 10px;
+}
+.new {
+  background-color: whitesmoke;
+}
+.header a {
+  justify-content: center;
+  color: #43484d;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  line-height: 25px;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: -1px;
+}
+.header a:hover{
+  color: #358ed7;
+  text-decoration:underline;
+}
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  color: whitesmoke;
+  font-size: 40px;
+  letter-spacing: -1px;
+}
+.header a.logo:hover{
+  text-decoration: none;
+}
+.header-right {
+  padding: 10px;
+  justify-content: center;
+  font-size: 10px;
+  letter-spacing: 2px;
+  background-color: whitesmoke;
+}
+
+/* Seach Bar Section */
+.btn1 {
+  font-family: inherit;
+  cursor: pointer;
+  outline: 0;
+  font-size: 1.05rem;
+}
+.text {
+  opacity: 0.8;
+}
+.meal-search {
+  margin: 2rem 0;
+}
+.meal-search cite {
+  font-size: 1rem;
+}
+.meal-search-box {
+  margin: 1.2rem 0;
+  display: flex;
+  align-items: stretch;
+}
+/* Search Bar Button */
+.search-control,
+.search-btn {
+  width: 100%;
+}
+.search-control {
+  padding: 0 1rem;
+  font-size: 1.1rem;
+  outline: 0;
+  font-family: inherit;
+  border: 1px solid #358ed7;
+  color: #358ed7;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+}
+.search-control::placeholder {
+  color: #358ed7;
+}
+.search-btn {
+  width: 55px;
+  height: 55px;
+  font-size: 1.8rem;
+  background: #085585;
+  color: #fff;
+  border: none;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  transition: all 0.4s linear;
+}
+.search-btn:hover {
+  background: #0d334a;
+}
+
+/* MAin meal Deatails */
+
+.meal-result {
+  margin-top: 4rem;
+}
+#meal {
+  margin: 2.4rem 0;
+}
+.meal-item {
+  overflow: hidden;
+  box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.79);
+  margin: 2rem 0;
+}
+.meal-img img {
+  width: 90%;
+ margin: 5%;
+  display: block;
+  border: 1px solid rgb(154, 199, 235);
+  
+}
+.meal-name {
+  padding-top: 1.2rem;
+}
+#img:hover {
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+  transition: 1s ease;
+}
+.meal-name h3 {
+  font-weight: 300;
+  font-size: 30px;
+  color: #43484d;
+  letter-spacing: -1px;
+}
+.recipe-btn {
+  text-decoration: none;
+  color: #43484d;
+  letter-spacing: 2px;
+  font-weight: 200;
+  font-size: 1.1rem;
+  padding: 0.75rem 0;
+  display: block;
+  width: 100%;
+  transition: all 0.4s linear;
+  margin: 3px;
+}
+.meal-name a {
+  text-decoration: none;
+  color: #43484d;
+  letter-spacing: 2px;
+  font-weight: 200;
+  font-size: 1.1rem;
+  padding: 0.75rem 0;
+  display: block;
+  width: 100%;
+  transition: all 0.4s linear;
+  margin: 3px;
+}
+
+/* Add Faourite button */
+#btn1 {
+  border-bottom: 1px solid #43484d;
+}
+
+.buttonadd {
+  border-radius: 4px;
+  border: none;
+  color: #43484d;
+  text-align: center;
+  font-size: 1.1rem;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.buttonadd span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.buttonadd span:after {
+  content: "\226b";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.buttonadd:hover span {
+  padding-right: 25px;
+}
+
+.buttonadd:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* Remove Faourite Button */
+.button {
+  border: none;
+  color: #43484d;
+  text-align: center;
+  font-size: 1.1rem;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: "\226a";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: -20px;
+  transition: 0.5s;
+}
+.button:hover span {
+  padding-left: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  left: 0;
+}
+
+/* if Meal NOt FOunt*/
+.notFound {
+  grid-template-columns: 1fr !important;
+  text-decoration: underline;
+  color: #43484d;
+  font-size: 1.8rem;
+  font-weight: 600;
+  width: 100%;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+  .header{
+    width: 100%;
+  }
+ 
+}
+
+@media screen and (min-width: 700px) {
+  .meal-search-box {
+    width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #meal {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  .meal-item {
+    margin: 0;
+  }
+  .meal-details {
+    width: 700px;
+  }
+}
+@media screen and (min-width: 800px) {
+  #meal {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  .meal-item {
+    margin: 0;
+  }
+  .meal-details {
+    width: 700px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #meal {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
